@@ -1,0 +1,40 @@
+{
+  "plan": {
+    "id": "plan_example",
+    "description": "Open example.com and capture headline",
+    "actions": [
+      {
+        "id": "a1",
+        "type": "goto",
+        "url": "https://example.com",
+        "description": "Open Example domain"
+      },
+      {
+        "id": "a2",
+        "type": "wait_for",
+        "description": "Wait for heading to appear",
+        "selector": "h1",
+        "wait_for": { "selector": "h1", "timeout": 10000 }
+      },
+      {
+        "id": "a3",
+        "type": "scrape",
+        "selector": "h1",
+        "description": "Capture page heading",
+        "extract": { "type": "text" },
+        "store_as": "heading",
+        "retry": { "count": 1, "delay": 500 }
+      },
+      {
+        "id": "a4",
+        "type": "scrape",
+        "selector": "p",
+        "description": "Capture paragraph text",
+        "extract": { "type": "text" },
+        "store_as": "paragraphs",
+        "retry": { "count": 1, "delay": 500 }
+      }
+    ],
+    "output": { "type": "json", "max_results": 5 }
+  }
+}
