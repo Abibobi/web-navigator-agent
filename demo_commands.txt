@@ -1,0 +1,10 @@
+1. Search laptops under 50000 and list top 5 links and short descriptions.
+2. Open amazon.in, search for "electric guitar", scrape top 3 product names and prices.
+3. Go to wikipedia, open the "Artificial intelligence" page, and extract the first paragraph.
+4. Search for "Playwright Python documentation" and return the first 3 result titles and URLs.
+5. Check weather.com for the 5-day forecast for Bengaluru and capture the temperature highs.
+6. Visit news.ycombinator.com and scrape the titles and URLs of the top 10 posts.
+7. Navigate to imdb.com, search for "Christopher Nolan", open the director page, and list the latest 3 movies.
+8. Open github.com, search for "fastapi awesome", and collect the first 5 repository titles with their star counts.
+9. Go to finance.yahoo.com, search for "AAPL", and capture the current price and price change.
+10. Visit medium.com and find the latest articles tagged "machine-learning", returning the first 5 titles and authors.

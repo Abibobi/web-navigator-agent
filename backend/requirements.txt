@@ -1,0 +1,11 @@
+fastapi
+uvicorn[standard]
+pydantic
+playwright
+requests
+python-dotenv
+ollama
+sqlite-utils
+pytest
+httpx
+loguru
